@@ -141,6 +141,7 @@
   <lot x="72" y="72" level="0" width="22" height="21" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_warehousestorage_04.tbx"/>
   <lot x="47" y="97" level="0" width="40" height="40" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_construction_01_factory.tbx"/>
   <lot x="158" y="12" level="0" width="19" height="33" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Retail and Commercial/lot_gas_02_generic.tbx"/>
+  <lot x="113" y="90" level="0" width="33" height="21" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Apartments/Apartment 3.tbx"/>
  </cell>
  <cell x="3" y="2" map="Arizona_3_2.tmx"/>
  <cell x="4" y="2" map="Arizona_4_2.tmx"/>

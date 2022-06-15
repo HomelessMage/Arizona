@@ -24,7 +24,7 @@
  </GenerateLots>
  <LuaSettings>
   <spawnPointsFile path=""/>
-  <worldObjectsFile path=""/>
+  <worldObjectsFile path="objects.lua"/>
  </LuaSettings>
  <bmp path="Arizona.bmp" x="0" y="0" width="5" height="5"/>
  <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
