@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world version="1.0" width="5" height="5">
+ <BMPToTMX>
+  <tmxexportdir path="."/>
+  <rulesfile path=""/>
+  <blendsfile path=""/>
+  <mapbasefile path=""/>
+  <assign-maps-to-world checked="true"/>
+  <warn-unknown-colors checked="true"/>
+  <compress checked="true"/>
+  <copy-pixels checked="true"/>
+  <update-existing checked="false"/>
+ </BMPToTMX>
+ <TMXToBMP>
+  <mainImage generate="true"/>
+  <vegetationImage generate="true"/>
+  <buildingsImage path="" generate="false"/>
+ </TMXToBMP>
+ <GenerateLots>
+  <exportdir path="."/>
+  <ZombieSpawnMap path="Arizona_ZombieSpawnMap.bmp"/>
+  <TileDefFolder path="../../../../TileZed/Tiles"/>
+  <worldOrigin origin="0,0"/>
+ </GenerateLots>
+ <LuaSettings>
+  <spawnPointsFile path=""/>
+  <worldObjectsFile path="objects.lua"/>
+ </LuaSettings>
+ <bmp path="Arizona.bmp" x="0" y="0" width="5" height="5"/>
+ <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
+ <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="false"/>
+ <propertyenum name="Skin" choices="White,Black" multi="false"/>
+ <propertydef name="Direction" default="N" enum="Direction"/>
+ <propertydef name="FaceDirection" default="true"/>
+ <propertydef name="WaterDirection" default="0.0"/>
+ <propertydef name="WaterSpeed" default="0.0"/>
+ <propertydef name="WaterGround" default="false"/>
+ <propertydef name="WaterShore" default="true"/>
+ <propertydef name="Female" default="true"/>
+ <propertydef name="Pose" default="pose01" enum="Pose"/>
+ <propertydef name="Skin" default="White" enum="Skin"/>
+ <template name="ParkingStallN">
+  <property name="Direction" value="N"/>
+ </template>
+ <template name="ParkingStallS">
+  <property name="Direction" value="S"/>
+ </template>
+ <template name="ParkingStallW">
+  <property name="Direction" value="W"/>
+ </template>
+ <template name="ParkingStallE">
+  <property name="Direction" value="E"/>
+ </template>
+ <template name="WaterFlowN">
+  <property name="WaterDirection" value="0"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowS">
+  <property name="WaterDirection" value="180"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowE">
+  <property name="WaterDirection" value="90"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterFlowW">
+  <property name="WaterDirection" value="270"/>
+  <property name="WaterSpeed" value="1.0"/>
+ </template>
+ <template name="WaterZone">
+  <property name="WaterGround" value="false"/>
+  <property name="WaterShore" value="true"/>
+ </template>
+ <objecttype name="TownZone"/>
+ <objecttype name="Forest"/>
+ <objecttype name="DeepForest"/>
+ <objecttype name="Nav"/>
+ <objecttype name="Vegitation"/>
+ <objecttype name="TrailerPark"/>
+ <objecttype name="Farm"/>
+ <objecttype name="ParkingStall"/>
+ <objecttype name="FarmLand"/>
+ <objecttype name="WaterFlow"/>
+ <objecttype name="WaterZone"/>
+ <objecttype name="Mannequin"/>
+ <objectgroup name="ParkingStall" color="#ff007f" defaulttype="ParkingStall"/>
+ <objectgroup name="TownZone" color="#aa0000" defaulttype="TownZone"/>
+ <objectgroup name="Forest" color="#00aa00" defaulttype="Forest"/>
+ <objectgroup name="Nav" color="#55aaff" defaulttype="Nav"/>
+ <objectgroup name="DeepForest" color="#003500" defaulttype="DeepForest"/>
+ <objectgroup name="Vegitation" color="#b3b300" defaulttype="Vegitation"/>
+ <objectgroup name="TrailerPark" color="#f50000" defaulttype="TrailerPark"/>
+ <objectgroup name="Farm" color="#55ff7f" defaulttype="Farm"/>
+ <objectgroup name="FarmLand" color="#bcff7d" defaulttype="FarmLand"/>
+ <objectgroup name="WaterFlow" color="#0000ff" defaulttype="WaterFlow"/>
+ <objectgroup name="WaterZone" color="#0000ff" defaulttype="WaterZone"/>
+ <objectgroup name="Mannequin" color="#0000ff" defaulttype="Mannequin"/>
+ <cell x="0" y="0" map="Arizona_0_0.tmx"/>
+ <cell x="1" y="0" map="Arizona_1_0.tmx"/>
+ <cell x="2" y="0" map="Arizona_2_0.tmx">
+  <lot x="75" y="-5" level="0" width="91" height="91" map="../../../../TileZed/Buildings/Military/military_base_by_7.tbx"/>
+ </cell>
+ <cell x="3" y="0" map="Arizona_3_0.tmx"/>
+ <cell x="4" y="0" map="Arizona_4_0.tmx"/>
+ <cell x="0" y="1" map="Arizona_0_1.tmx"/>
+ <cell x="1" y="1" map="Arizona_1_1.tmx"/>
+ <cell x="2" y="1" map="Arizona_2_1.tmx">
+  <lot x="31" y="250" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+ </cell>
+ <cell x="3" y="1" map="Arizona_3_1.tmx"/>
+ <cell x="4" y="1" map="Arizona_4_1.tmx"/>
+ <cell x="0" y="2" map="Arizona_0_2.tmx"/>
+ <cell x="1" y="2" map="Arizona_1_2.tmx"/>
+ <cell x="2" y="2" map="Arizona_2_2.tmx">
+  <lot x="22" y="3" level="0" width="21" height="57" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Industrial/lot_trainyard_07_coveredrepair.tbx"/>
+  <lot x="67" y="13" level="0" width="21" height="21" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Restaurants and Entertainment/lot_bar_06_country.tbx"/>
+  <lot x="99" y="59" level="0" width="25" height="24" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Retail and Commercial/lot_generalstore_03.tbx"/>
+  <lot x="68" y="30" level="0" width="22" height="28" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Retail and Commercial/lot_plaza_21_toolstore.tbx"/>
+  <lot x="119" y="60" level="0" width="17" height="20" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Community Services/lot_police_04_smalltown.tbx"/>
+  <lot x="65" y="56" level="0" width="26" height="18" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Medical/lot_hospital_01_smalltown.tbx"/>
+  <lot x="104" y="0" level="0" width="21" height="37" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Hospitality/lot_motel_04.tbx"/>
+  <lot x="184" y="85" level="0" width="18" height="18" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_trailer_E_01.tbx"/>
+  <lot x="168" y="80" level="0" width="18" height="18" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_trailer_E_04_small.tbx"/>
+  <lot x="172" y="89" level="0" width="18" height="18" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_trailer_N_01.tbx"/>
+  <lot x="155" y="0" level="0" width="9" height="9" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_billboard_05_citr8.tbx"/>
+  <lot x="116" y="0" level="0" width="31" height="15" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Retail and Commercial/lot_grocery_07_rural.tbx"/>
+  <lot x="131" y="37" level="0" width="9" height="20" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Retail and Commercial/lot_liquorstore_01.tbx"/>
+  <lot x="140" y="16" level="0" width="9" height="9" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_billboard_01_spiffo.tbx"/>
+  <lot x="140" y="25" level="0" width="9" height="9" map="../../../../TileZed/Buildings Catalogue Curated/West Point/Other/lot_billboard_07_zippee.tbx"/>
+  <lot x="52" y="42" level="0" width="21" height="32" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Residential/lot_farmhousing_03_facilities.tbx"/>
+  <lot x="84" y="72" level="0" width="13" height="18" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Retail and Commercial/lot_laundromat_05.tbx"/>
+  <lot x="104" y="37" level="0" width="20" height="17" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Retail and Commercial/lot_plaza_21_smalltowntbx.tbx"/>
+  <lot x="31" y="59" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="110" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="161" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="212" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="249" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="0" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="18" y="55" level="0" width="18" height="30" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_trainyard_04.tbx"/>
+  <lot x="18" y="76" level="0" width="18" height="30" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_trainyard_05_bathroom.tbx"/>
+  <lot x="72" y="72" level="0" width="22" height="21" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_warehousestorage_04.tbx"/>
+  <lot x="47" y="97" level="0" width="40" height="40" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_construction_01_factory.tbx"/>
+  <lot x="158" y="12" level="0" width="19" height="33" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Retail and Commercial/lot_gas_02_generic.tbx"/>
+ </cell>
+ <cell x="3" y="2" map="Arizona_3_2.tmx"/>
+ <cell x="4" y="2" map="Arizona_4_2.tmx"/>
+ <cell x="0" y="3" map="Arizona_0_3.tmx"/>
+ <cell x="1" y="3" map="Arizona_1_3.tmx"/>
+ <cell x="2" y="3" map="Arizona_2_3.tmx">
+  <lot x="31" y="0" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="51" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="102" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="153" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="204" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="249" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+ </cell>
+ <cell x="3" y="3" map="Arizona_3_3.tmx"/>
+ <cell x="4" y="3" map="Arizona_4_3.tmx"/>
+ <cell x="0" y="4" map="Arizona_0_4.tmx"/>
+ <cell x="1" y="4" map="Arizona_1_4.tmx"/>
+ <cell x="2" y="4" map="Arizona_2_4.tmx">
+  <lot x="161" y="119" level="0" width="8" height="19" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_armory_01.tbx"/>
+  <lot x="169" y="119" level="0" width="8" height="13" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_01.tbx"/>
+  <lot x="177" y="119" level="0" width="8" height="13" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_02.tbx"/>
+  <lot x="181" y="136" level="0" width="8" height="13" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_06.tbx"/>
+  <lot x="189" y="131" level="0" width="8" height="6" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_07.tbx"/>
+  <lot x="167" y="141" level="0" width="5" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_09.tbx"/>
+  <lot x="174" y="141" level="0" width="5" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_10.tbx"/>
+  <lot x="155" y="118" level="0" width="8" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tower_02.tbx"/>
+  <lot x="138" y="128" level="0" width="8" height="7" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_watchpost_01.tbx"/>
+  <lot x="132" y="118" level="0" width="5" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_10.tbx"/>
+  <lot x="132" y="127" level="0" width="5" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_12.tbx"/>
+  <lot x="132" y="136" level="0" width="5" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_20.tbx"/>
+  <lot x="139" y="136" level="0" width="6" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_22.tbx"/>
+  <lot x="142" y="118" level="0" width="7" height="6" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_border_02.tbx"/>
+  <lot x="142" y="145" level="0" width="7" height="6" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_border_02.tbx"/>
+  <lot x="156" y="141" level="0" width="8" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tower_02.tbx"/>
+  <lot x="31" y="0" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="50" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="13" y="74" level="0" width="19" height="34" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_trainstation_01_abandoned.tbx"/>
+ </cell>
+ <cell x="3" y="4" map="Arizona_3_4.tmx"/>
+ <cell x="4" y="4" map="Arizona_4_4.tmx"/>
+</world>
