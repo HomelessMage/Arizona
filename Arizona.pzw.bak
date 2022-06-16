@@ -24,7 +24,7 @@
  </GenerateLots>
  <LuaSettings>
   <spawnPointsFile path=""/>
-  <worldObjectsFile path=""/>
+  <worldObjectsFile path="objects.lua"/>
  </LuaSettings>
  <bmp path="Arizona.bmp" x="0" y="0" width="5" height="5"/>
  <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
@@ -141,6 +141,7 @@
   <lot x="72" y="72" level="0" width="22" height="21" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_warehousestorage_04.tbx"/>
   <lot x="47" y="97" level="0" width="40" height="40" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_construction_01_factory.tbx"/>
   <lot x="158" y="12" level="0" width="19" height="33" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Retail and Commercial/lot_gas_02_generic.tbx"/>
+  <lot x="113" y="90" level="0" width="33" height="21" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Apartments/Apartment 3.tbx"/>
  </cell>
  <cell x="3" y="2" map="Arizona_3_2.tmx"/>
  <cell x="4" y="2" map="Arizona_4_2.tmx"/>
@@ -177,7 +178,31 @@
   <lot x="156" y="141" level="0" width="8" height="8" map="../../../../TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tower_02.tbx"/>
   <lot x="31" y="0" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
   <lot x="31" y="50" level="0" width="3" height="51" map="../../../../TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
-  <lot x="13" y="74" level="0" width="19" height="34" map="../../../../TileZed/Buildings Catalogue Curated/Muldraugh/Industrial/lot_trainstation_01_abandoned.tbx"/>
+  <lot x="31" y="101" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="29" y="108" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart5.tbx"/>
+  <lot x="31" y="152" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="203" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="31" y="249" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="29" y="126" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart6.tbx"/>
+  <lot x="29" y="135" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart6.tbx"/>
+  <lot x="37" y="249" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="37" y="198" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="37" y="147" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="37" y="96" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="37" y="45" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="37" y="-6" level="0" width="3" height="51" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Dixie/Industrial/railroad.tbx"/>
+  <lot x="164" y="38" level="0" width="7" height="7" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/West Point/Other/lot_outhouse_small_01.tbx"/>
+  <lot x="161" y="54" level="0" width="25" height="17" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_cabin_04_abandoned.tbx"/>
+  <lot x="158" y="26" level="0" width="17" height="25" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_cabin_13_abandoned.tbx"/>
+  <lot x="158" y="11" level="0" width="25" height="17" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_cabin_12_abandoned.tbx"/>
+  <lot x="154" y="2" level="0" width="9" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_billboard_11_jackiejaye.tbx"/>
+  <lot x="43" y="91" level="0" width="41" height="25" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_landingpad_01.tbx"/>
+  <lot x="47" y="84" level="0" width="8" height="13" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Valley Station/Other/lot_military_tent_barracks_03.tbx"/>
+  <lot x="155" y="12" level="0" width="17" height="25" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings Catalogue Curated/Muldraugh/Other/lot_cabin_03_abandoned.tbx"/>
+  <lot x="29" y="117" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart6.tbx"/>
+  <lot x="29" y="99" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart6.tbx"/>
+  <lot x="29" y="90" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart6.tbx"/>
+  <lot x="29" y="81" level="0" width="7" height="9" map="../../../../../../Steam/steamapps/common/Project Zomboid Modding Tools/TileZed/Buildings/Special/train_cart7.tbx"/>
  </cell>
  <cell x="3" y="4" map="Arizona_3_4.tmx"/>
  <cell x="4" y="4" map="Arizona_4_4.tmx"/>
